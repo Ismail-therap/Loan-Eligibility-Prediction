@@ -18,11 +18,13 @@ def home():
 
 def predict_api():
     data = request.json['data']
-    print(data) # Input data by user
-    new_data = np.array(list(data.values())).reshape(1,-1) # converting json input to required formet to feed into the model. 
-    output = regmodel.predict()
+    new_data =  np.array(list(data.values())).reshape(1,-1)
+    print(new_data)
+    output = regmodel.predict(new_data)
+    print(output)
     print(output[0])
-    return jsonify(output[0])
+
+    return jsonify(int(output[0]))
 
 
 if __name__ =="__main__":
