@@ -18,17 +18,17 @@
 
      <!-- Main Input For Receiving Query to our ML -->
     <form action="{{ url_for('predict')}}"method="post">
-      <input type="text" name="Gender" placeholder="Gender" required="required" /><br>
-    	<input type="text" name="Married" placeholder="Married" required="required" /><br>
-        <input type="text" name="Dependents" placeholder="Dependents" required="required" /><br>
-        <input type="text" name="Education" placeholder="Education" required="required" /><br>
-        <input type="text" name="Self_Employed" placeholder="Self_Employed" required="required" /><br>
-        <input type="text" name="ApplicantIncome" placeholder="ApplicantIncome" required="required" /><br>
-        <input type="text" name="CoapplicantIncome" placeholder="CoapplicantIncome" required="required" /><br>
-        <input type="text" name="LoanAmount" placeholder="LoanAmount" required="required" /><br>
-        <input type="text" name="Loan_Amount_Term" placeholder="Loan_Amount_Term" required="required" /><br>
-        <input type="text" name="Credit_History" placeholder="Credit_History" required="required" /><br>
-        <input type="text" name="Property_Area" placeholder="Property_Area" required="required" /><br>
+      <input type="text" name="Gender" placeholder="Gender (0 or 1)" required="required" /><br>
+    	<input type="text" name="Married" placeholder="Married (0 or 1)" required="required" /><br>
+        <input type="text" name="Dependents" placeholder="Dependents (0 to 3)" required="required" /><br>
+        <input type="text" name="Education" placeholder="Education (0 or 1)" required="required" /><br>
+        <input type="text" name="Self_Employed" placeholder="Self_Employed (0 or 1)" required="required" /><br>
+        <input type="text" name="ApplicantIncome" placeholder="ApplicantIncome ($ yearly)" required="required" /><br>
+        <input type="text" name="CoapplicantIncome" placeholder="CoapplicantIncome ($ yearly)" required="required" /><br>
+        <input type="text" name="LoanAmount" placeholder="LoanAmount ($700k max)" required="required" /><br>
+        <input type="text" name="Loan_Amount_Term" placeholder="Loan_Term (12 to 480)" required="required" /><br>
+        <input type="text" name="Credit_History" placeholder="Credit_History (0 or 1)" required="required" /><br>
+        <input type="text" name="Property_Area" placeholder="Property_Area (0 to 2)" required="required" /><br>
 
        
 
