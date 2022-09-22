@@ -33,7 +33,7 @@ def predict():
     final_input = np.array(data).reshape(1,-1)
     print(final_input)
     output = regmodel.predict(final_input)[0]
-    return render_template("home.html", prediction_text = "The prediction (1 = Yes, 0 = No) for loan eligibility is {}".format(output))
+    return render_template("home.html", prediction_text = "The prediction for loan eligibility is {} (1 = Yes, 0 = No)".format(output))
 
 if __name__ =="__main__":
     app.run(debug=True)
